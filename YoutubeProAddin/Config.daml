@@ -1,0 +1,46 @@
+﻿<ArcGIS defaultAssembly="YoutubeProAddin.dll" defaultNamespace="YoutubeProAddin" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{4f54709e-8e19-4bb1-a481-ba5f32479827}" version="1.1" desktopVersion="2.8.29751">
+    <Name>YoutubeProAddin</Name>
+    <Description>YoutubeProAddin description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>Administrator</Author>
+    <Company>Acme</Company>
+    <Date>10/24/2021 10:27:54 AM</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="YoutubeProAddin_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="youtubeproaddin_tab1" caption="My Tab">
+          <group refID="youtubeproaddin_group1"/>
+        </tab>
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="youtubeproaddin_group1" caption="" appearsOnAddInTab="false">
+          <!-- host controls within groups -->
+          <button refID="YoutubeProAddin_Button1" size="large" />
+		  <button refID="YoutubeProAddin_Button2" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+		  <button id="YoutubeProAddin_Button1" caption="My First Button" className="Button1" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+			  <tooltip heading="Tooltip Heading">
+				  Tooltip text<disabledText />
+			  </tooltip>
+		  </button>
+
+		  <button id="YoutubeProAddin_Button2" caption="My Second Button" className="pythonButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+			  <tooltip heading="Tooltip Heading">
+				  Tooltip text<disabledText />
+			  </tooltip>
+		  </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
