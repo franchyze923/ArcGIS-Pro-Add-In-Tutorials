@@ -16,6 +16,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ArcGIS.Desktop.Core.Geoprocessing;
+using System.IO;
+
+
 
 namespace YoutubeProAddin
 {
@@ -23,8 +27,14 @@ namespace YoutubeProAddin
     {
         protected override void OnClick()
         {
-        
-            ArcGIS.Desktop.Framework.Dialogs.MessageBox.Show("This is the Python Button");
+
+            //ArcGIS.Desktop.Framework.Dialogs.MessageBox.Show("This is the Python Button");
+            string installPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            string toolboxPath = Path.Combine(installPath, "youtube_toolbox.pyt\\Tool");
+
+            Geoprocessing.OpenToolDialog(toolboxPath, null);
+
+
         }
     }
 }

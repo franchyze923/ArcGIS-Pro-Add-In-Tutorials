@@ -1,5 +1,5 @@
 ﻿<ArcGIS defaultAssembly="YoutubeProAddin.dll" defaultNamespace="YoutubeProAddin" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
-  <AddInInfo id="{4f54709e-8e19-4bb1-a481-ba5f32479827}" version="1.0" desktopVersion="2.8.29751">
+  <AddInInfo id="{4f54709e-8e19-4bb1-a481-ba5f32479827}" version="1.1" desktopVersion="2.8.29751">
     <Name>YoutubeProAddin</Name>
     <Description>YoutubeProAddin description</Description>
     <Image>Images\AddinDesktop32.png</Image>
